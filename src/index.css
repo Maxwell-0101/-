@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-game-bg: #0f172a;
+  --color-block-1: #3b82f6;
+  --color-block-2: #8b5cf6;
+  --color-block-3: #ec4899;
+  --color-block-4: #f59e0b;
+  --color-block-5: #10b981;
+}
+
+@layer base {
+  body {
+    @apply bg-game-bg text-white overflow-hidden;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
